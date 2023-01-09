@@ -11,5 +11,5 @@ def isolate(fn_isolation):
 
 
 @pytest.fixture(scope="module")
-def token(Token, accounts):
-    return Token.deploy("Test Token", "TST", 18, 1e21, {"from": accounts[0]})
+def taskBounties(TaskBounties, accounts):
+    return TaskBounties.deploy({"from": accounts[0]})
